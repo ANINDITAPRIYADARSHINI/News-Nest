@@ -1,11 +1,16 @@
-import react from 'react'
-import Navbar from './components/Navbar'
+import react from 'react';
+import Navbar from './components/Navbar';
+import News from './components/News';
 
 
 
 
 export default function App() {
   return (
-    <Navbar />
+    <>
+      <Navbar />
+      <News />
+    </>
+    
   )
 }
