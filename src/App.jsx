@@ -1,7 +1,7 @@
-import react from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import News from './components/News';
-
+import Footer from './components/Footer';
 
 
 
@@ -10,6 +10,7 @@ export default function App() {
     <>
       <Navbar />
       <News />
+      <Footer />
     </>
     
   )
