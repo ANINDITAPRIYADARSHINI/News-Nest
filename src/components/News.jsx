@@ -157,6 +157,10 @@ export default function News() {
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
                 </div>
 
+                <div className="flex flex-col w-full">
+                    <div className="divider"></div>
+                </div>
+
             {/*Technology*/}
             <div className="grid grid-cols-4" gap-4>
                 <h2 className="text-left">Technology</h2>
@@ -255,9 +259,13 @@ export default function News() {
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
             </div>
 
+            <div className="flex flex-col w-full">
+                <div className="divider"></div>
+            </div>
+
             {/*Business*/}
             <div className="grid grid-cols-4" gap-4>
-                <h2 className="text-left">Technology</h2>
+                <h2 className="text-left">Business</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
                         <a href="#!">
@@ -352,10 +360,15 @@ export default function News() {
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
             </div>
+
+            <div className="flex flex-col w-full">
+                <div className="divider"></div>
+            </div>
+
 
             {/*Science*/}
             <div className="grid grid-cols-4" gap-4>
-                <h2 className="text-left">Technology</h2>
+                <h2 className="text-left">Science</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
                         <a href="#!">
@@ -449,12 +462,16 @@ export default function News() {
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
+            </div>
+
+            <div className="flex flex-col w-full">
+                <div className="divider"></div>
             </div>
 
 
             {/*Health*/}
             <div className="grid grid-cols-4" gap-4>
-                <h2 className="text-left">Technology</h2>
+                <h2 className="text-left">Health</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
                         <a href="#!">
@@ -548,11 +565,15 @@ export default function News() {
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
+            </div>
+
+            <div className="flex flex-col w-full">
+                <div className="divider"></div>
             </div>
 
             {/*Sports*/}
             <div className="grid grid-cols-4" gap-4>
-                <h2 className="text-left">Technology</h2>
+                <h2 className="text-left">Sports</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
                         <a href="#!">
@@ -646,12 +667,15 @@ export default function News() {
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
+            </div>
+            <div className="flex flex-col w-full">
+                <div className="divider"></div>
             </div>
 
 
             {/*Entertainment*/}
             <div className="grid grid-cols-4" gap-4>
-                <h2 className="text-left">Technology</h2>
+                <h2 className="text-left">Entertainment</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
                         <a href="#!">
