@@ -16,7 +16,7 @@ export default function Content() {
             </div>
         
             {/*Cards*/}
-            <div className="grid grid-cols-4" gap-4>
+            <div className="grid grid-cols-4 gap-4" >
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
                         <a href="#!">

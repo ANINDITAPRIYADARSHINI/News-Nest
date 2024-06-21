@@ -1,23 +1,26 @@
 import React from 'react';
 
-export default function News() {
+export default function News({articles}) {
     return(
         
         <>
         {/*Top headlines*/}
-            <div className="card lg:card-side bg-base-100 shadow-xl">
+        {articles.map((article, index) => (
+            <div key={index} className="card lg:card-side bg-base-100 shadow-xl">
                 <figure><img src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album"/></figure>
                 <div className="card-body">
-                    <h2 className="card-title">New album is released!</h2>
+                    <h2 className="card-title">{article.title}</h2>
                     <p>Click the button to listen on Spotiwhy app.</p>
                     <div className="card-actions justify-end">
                     <button className="btn btn-primary">Listen</button>
                     </div>
                 </div>
             </div>
+        ))}
+            
         
             {/*Cards*/}
-            <div className="grid grid-cols-4" gap-4>
+            <div className="grid grid-cols-4 gap-4" >
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
                         <a href="#!">
@@ -151,7 +154,7 @@ export default function News() {
             </div>
             {/*Pagination*/}
                 <div className="join">
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
+                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1"  />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
@@ -162,7 +165,7 @@ export default function News() {
                 </div>
 
             {/*Technology*/}
-            <div className="grid grid-cols-4" gap-4>
+            <div className="grid grid-cols-4 gap-4" >
                 <h2 className="text-left">Technology</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
@@ -253,7 +256,7 @@ export default function News() {
             </div>
             {/*Pagination*/}
             <div className="join">
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
+                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1"  />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
@@ -264,7 +267,7 @@ export default function News() {
             </div>
 
             {/*Business*/}
-            <div className="grid grid-cols-4" gap-4>
+            <div className="grid grid-cols-4 gap-4" >
                 <h2 className="text-left">Business</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
@@ -355,7 +358,7 @@ export default function News() {
             </div>
             {/*Pagination*/}
             <div className="join">
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
+                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1"  />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
@@ -367,7 +370,7 @@ export default function News() {
 
 
             {/*Science*/}
-            <div className="grid grid-cols-4" gap-4>
+            <div className="grid grid-cols-4 gap-4" >
                 <h2 className="text-left">Science</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
@@ -458,7 +461,7 @@ export default function News() {
             </div>
             {/*Pagination*/}
             <div className="join">
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
+                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1"  />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
@@ -470,7 +473,7 @@ export default function News() {
 
 
             {/*Health*/}
-            <div className="grid grid-cols-4" gap-4>
+            <div className="grid grid-cols-4 gap-4" >
                 <h2 className="text-left">Health</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
@@ -561,7 +564,7 @@ export default function News() {
             </div>
             {/*Pagination*/}
             <div className="join">
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
+                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1"  />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
@@ -572,7 +575,7 @@ export default function News() {
             </div>
 
             {/*Sports*/}
-            <div className="grid grid-cols-4" gap-4>
+            <div className="grid grid-cols-4 gap-4" >
                 <h2 className="text-left">Sports</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
@@ -663,7 +666,7 @@ export default function News() {
             </div>
             {/*Pagination*/}
             <div className="join">
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
+                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1"  />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
@@ -674,7 +677,7 @@ export default function News() {
 
 
             {/*Entertainment*/}
-            <div className="grid grid-cols-4" gap-4>
+            <div className="grid grid-cols-4 gap-4" >
                 <h2 className="text-left">Entertainment</h2>
                     <div
                         className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
@@ -765,7 +768,7 @@ export default function News() {
             </div>
             {/*Pagination*/}
             <div className="join">
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
+                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
                     <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
