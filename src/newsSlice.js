@@ -5,20 +5,16 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 export const fetchNews = createAsyncThunk(
   'news/fetchNews',
   async () => {
-    const url = 'https://real-time-news-data.p.rapidapi.com/local-headlines?query=New-York&country=US&lang=en&limit=500';
-    const options = {
-      method: 'GET',
-      headers: {
-        'x-rapidapi-key': '436e290bd8msh937e08bd13b06b7p12a85ejsn6f7c9fe0525b',
-        'x-rapidapi-host': 'real-time-news-data.p.rapidapi.com'
-      }
-    };
-    const response = await fetch(url, options);
+    const apiKey = '676679172889468eb61d7745e93052cc'; // Replace with your actual API key
+    const response = await fetch(`https://newsapi.org/v2/everything?q=keyword&from=2024-06-22&sortBy=publishedAt&apiKey=${apiKey}`);
     if (!response.ok) {
+      if (response.status === 426) {
+        throw new Error('Upgrade required to access this API.');
+      }
       throw new Error('Failed to fetch news');
     }
     const data = await response.json();
-    return data.data; // Assuming 'data' contains the array of articles
+    return data.articles;
   }
 );
 

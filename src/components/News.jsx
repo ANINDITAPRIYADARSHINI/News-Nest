@@ -1,22 +1,21 @@
 import React from 'react';
 
-export default function News({articles}) {
+export default function News() {
     return(
         
         <>
         {/*Top headlines*/}
-        {articles.map((article, index) => (
-            <div key={index} className="card lg:card-side bg-base-100 shadow-xl">
+        
+            <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure><img src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album"/></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{article.title}</h2>
+                    <h2 className="card-title">Headlines</h2>
                     <p>Click the button to listen on Spotiwhy app.</p>
                     <div className="card-actions justify-end">
                     <button className="btn btn-primary">Listen</button>
                     </div>
                 </div>
             </div>
-        ))}
             
         
             {/*Cards*/}
